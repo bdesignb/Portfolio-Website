@@ -49,26 +49,43 @@ export const data = {
 			className: 'fas fa-expand'
 		}
 	],
-	service: [
+	facts: [
 		{
-			name: 'Branding',
-			description: 'Creating a distinct visual identity for your business',
-			className: 'far fa-square'
+			icon: 'far fa-heart',
+			title: 'icon downloads',
+			count: '400',			
+		},		
+		{
+			icon: 'fas fa-pencil-alt',
+			title: 'projects completed',
+			count: '20',	
 		},
+		{
+			icon: 'fas fa-percent',
+			title: 'job success',
+			count: '100',	
+		},
+		{
+			icon: 'far fa-star',
+			title: 'contest won',
+			count: '8',	
+		}
+	],
+	service: [		
 		{
 			name: 'Graphic Design',
 			description: 'Creating a distinct visual identity for your business',
-			className: 'fas fa-expand'
+			className: 'fas fa-paint-brush'
 		},
 		{
 			name: 'Web Design',
 			description: 'Creating a distinct visual identity for your business',
-			className: 'far fa-square'
+			className: 'fas fa-pen-nib'
 		},
 		{
 			name: 'Development',
 			description: 'Creating a distinct visual identity for your business',
-			className: 'fas fa-expand'
+			className: 'fas fa-code'
 		}
 	],
 	portfolio: [ 
@@ -109,7 +126,7 @@ export const data = {
 		clients: [
 			{
 				title: 'Siemens',				
-				image: './img/siemens-logo.jpg',
+				image: './img/siemens-logo.png',
 				url: ''
 			},
 			{
@@ -146,6 +163,23 @@ export const data = {
 				title: 'North',
 				image: './img/north-logo.png',
 				url: ''
+			}
+		],
+		contact: [
+			{
+				icon: 'fas fa-map-marker-alt fa-1x',				
+				name: 'adress',
+				title: 'novi sad, serbia'
+			},
+			{
+				icon: 'fas fa-phone fa-1x',				
+				name: 'phone',
+				title: '(+381) 64 273 xxx'
+			},
+			{
+				icon: 'fas fa-envelope fa-1x',				
+				name: 'email',
+				title: '@gmail.com'
 			}
 		]
 	

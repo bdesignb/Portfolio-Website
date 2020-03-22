@@ -1,50 +1,27 @@
-
 import React, { Component } from 'react';
 import '../App.css';
 
 class Facts extends Component {
     render() {
+
+        var facts = this.props.data.map((fact) => {
+            return (
+                <div className="col-md-3 text-center">
+                    <div className="single-fact">
+                        <i className={fact.icon}></i>
+                        <h2>{fact.count}</h2>
+                        <p>{fact.title}</p>
+                    </div>
+                </div>
+            )
+        });
+
         return (
             <div className="facts fixed-bg" id='facts'>
                 <div className="overlay black-overlay">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-3 text-center">
-                                {/* START FACT */}
-                                <div className="single-fact">
-                                    <i className="far fa-heart"></i>
-                                    <h2>400</h2>
-                                    <p>Icon Downloads</p>
-                                </div>
-                                {/* END FACT */}
-                            </div>
-                            <div className="col-md-3 text-center">
-                                {/* START FACT */}
-                                <div className="single-fact">
-                                    <i className="fas fa-pencil-alt"></i>
-                                    <h2>20</h2>
-                                    <p>Projects Completed</p>
-                                </div>
-                                {/* END FACT */}
-                            </div>
-                            <div className="col-md-3 text-center">
-                                {/* START FACT */}
-                                <div className="single-fact">
-                                    <i className="fas fa-percent"></i>
-                                    <h2>100%</h2>
-                                    <p>Job Success</p>
-                                </div>
-                                {/* END FACT */}
-                            </div>
-                            <div className="col-md-3 text-center">
-                                {/* START FACT */}
-                                <div className="single-fact">
-                                    <i className="far fa-star"></i>
-                                    <h2>8</h2>
-                                    <p>Contest Won</p>
-                                </div>
-                                {/* END FACT */}
-                            </div>
+                            {facts}
                         </div>
                     </div>
                 </div>

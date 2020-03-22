@@ -2,6 +2,7 @@ import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBView, MDBMask } from 'mdbreact';
 import Lightbox from 'react-image-lightbox';
 import '../Lightbox.css';
+import Title from './Title';
 
 class Portfolio extends React.Component {
 	state = {
@@ -18,8 +19,8 @@ class Portfolio extends React.Component {
 			photoIndex++;
 			const privateKey = photoIndex;
 			return (
-				<MDBCol md="4" key={photoIndex}>
-					<figure>
+				<MDBCol md="4" key={photoIndex} >
+					<figure className='portfolio'>
 						<img
 							src={imageSrc}
 							alt="Portfolio"
@@ -35,13 +36,8 @@ class Portfolio extends React.Component {
 	render() {
 		const { photoIndex, isOpen, images } = this.state;
 		return (
-			<MDBContainer className="section" id="portfolio">
-				{/* START SECTION TITLE */}
-				<div className="section-title">
-					<h4 className="text-center">Some of</h4>
-					<h2 className="text-center">My Completed Projects</h2>
-				</div>
-				{/* END SECTION TITLE */}
+			<MDBContainer className="section" id="portfolio">			
+				<Title title='my projects' subtitle='some of' />
 				<div className="mdb-lightbox">
 					<MDBRow>{this.renderImages()}</MDBRow>
 				</div>
