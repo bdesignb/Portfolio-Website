@@ -20,7 +20,7 @@ class Header extends Component {
                                         <h4><span>graphic design. </span><span>web design. </span><span> development.</span></h4>
                                         <h2>I AM
                                             <span>
-                                                <Typer dataText={[" DESIGNER", " DEVELOPER", " CREATIVE"]} />
+                                                <Typer dataText={[" designer", " developer", " creative"]} />
                                             </span>
                                         </h2>
                                     </div>
