@@ -194,7 +194,7 @@ SECTION COMMON STYLE
 	.top-nav .navbar-collapse.show {
 		background-color: rgba(255, 255, 255, 0.9);
 		text-align: center;
-		padding: 12px 0;
+		padding: 0;
 	}
 
 	.top-nav .navbar-collapse.show a {
