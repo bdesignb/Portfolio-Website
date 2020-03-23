@@ -5,15 +5,13 @@
 COMMON STYLE       
 -----------------------------------------*/
 
-html,
-body,
-html * {
-	line-height: 1.5;
-	font-family: 'Roboto', sans-serif;
-}
 
+
+html,
 body {
+	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
+	width: auto !important;
 }
 
 ol,
@@ -217,6 +215,7 @@ SECTION COMMON STYLE
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: #cfcfcf;
+
 }
 
 .header .overlay {
@@ -345,7 +344,7 @@ SECTION COMMON STYLE
 	.header-content h2 {
 		font-size: 3.5rem;
 		margin-bottom: 4rem;
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 
 	.header-content h2 span {
@@ -398,15 +397,14 @@ SECTION COMMON STYLE
 
 }
 
-@media only screen and (min-device-width : 500px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media only screen and (min-device-width : 600px) and (max-device-width : 1000px) and (orientation : landscape) {
 	.header-content h4 {
 		font-size: 0.75rem;
-		font-weight: 200;
 	}
 
 	.header-content h2 {
-		font-size: 3rem;
-		margin-bottom: 0.7rem;
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.header-content h2 span {
@@ -415,7 +413,7 @@ SECTION COMMON STYLE
 	}
 
 	.header-content h4 span {
-		line-height: 1.3rem;
+		line-height: 1.2rem;
 		display: inline;
 	}
 
@@ -772,6 +770,7 @@ CLIENTS SECTION
 	-webkit-filter: grayscale(1);
 	-webkit-transition: all .8s ease-in-out;
 	width: 7.5rem;
+	padding-bottom: 1.5rem;
 }
 
 .clients img:hover {

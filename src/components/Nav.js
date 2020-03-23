@@ -33,6 +33,7 @@ class Nav extends Component {
       : 'navbar-toggler navbar-toggler-right';
 
     return (
+  
       <nav
         className={
           this.state.isTop ? (
@@ -96,6 +97,7 @@ class Nav extends Component {
           </div>
         </div>
       </nav>
+     
     );
   }
 }
