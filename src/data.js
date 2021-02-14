@@ -53,7 +53,7 @@ export const data = {
 		{
 			icon: 'far fa-heart',
 			title: 'icon downloads',
-			count: '400',			
+			count: '600',			
 		},		
 		{
 			icon: 'fas fa-pencil-alt',
